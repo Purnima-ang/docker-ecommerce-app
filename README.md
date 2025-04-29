@@ -20,8 +20,12 @@ echo "   cd <your_repository_name>" >> README.md
 echo "   \`\`\`" >> README.md
 echo "2. Run the application using Docker Compose:" >> README.md
 echo "   \`\`\`bash" >> README.md
-echo "   docker-compose up -d --build" >> README.md
+echo "   docker compose up -d --build" >> README.md
 echo "   \`\`\`" >> README.md
 echo "3. Access the web application in your browser at `http://localhost:5000`." >> README.md
 echo "" >> README.md
-echo "## Docker Hub Images" >> README.md
+echo "# Run with development settings (using .env or .env.development)" >> README.md
+echo "docker-compose up -d --build" >> README.md
+echo "" >> README.md
+echo "# Run with production settings (using .env.production)" >> README.md
+echo "docker-compose --env-file .env.production up -d --build" >> README.md
