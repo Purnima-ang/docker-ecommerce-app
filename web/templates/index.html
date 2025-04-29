@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Storefront</title>
+</head>
+<body>
+    <h1>Welcome to our Store!</h1>
+    <ul>
+        {% for product in products %}
+        <li>{{ product }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
