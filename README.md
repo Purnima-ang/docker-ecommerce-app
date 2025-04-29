@@ -1,31 +1,20 @@
-echo "# E-commerce Multi-Service Application" > README.md
-echo "" >> README.md
-echo "This project demonstrates a simple e-commerce storefront application built with Docker." >> README.md
-echo "" >> README.md
-echo "## Services" >> README.md
-echo "- **Web Service:** A frontend application built with Python and Flask." >> README.md
-echo "- **Database Service:** A PostgreSQL database to store application data." >> README.md
-echo "- **Cache Service:** Redis for caching frequently accessed data." >> README.md
-echo "" >> README.md
-echo "## Prerequisites" >> README.md
-echo "- Docker (20.10 or later)" >> README.md
-echo "- Docker Compose (1.27 or later)" >> README.md
-echo "- Git" >> README.md
-echo "" >> README.md
-echo "## Setup Instructions" >> README.md
-echo "1. Clone the repository:" >> README.md
-echo "   \`\`\`bash" >> README.md
-echo "   git clone https://github.com/<your_github_username>/<your_repository_name>.git" >> README.md
-echo "   cd <your_repository_name>" >> README.md
-echo "   \`\`\`" >> README.md
-echo "2. Run the application using Docker Compose:" >> README.md
-echo "   \`\`\`bash" >> README.md
-echo "   docker compose up -d --build" >> README.md
-echo "   \`\`\`" >> README.md
-echo "3. Access the web application in your browser at `http://localhost:5000`." >> README.md
-echo "" >> README.md
-echo "# Run with development settings (using .env or .env.development)" >> README.md
-echo "docker-compose up -d --build" >> README.md
-echo "" >> README.md
-echo "# Run with production settings (using .env.production)" >> README.md
-echo "docker-compose --env-file .env.production up -d --build" >> README.md
+# E-commerce Multi-Service Application
+
+Dockerized e-commerce storefront with the following services:
+
+- **Web Service:** A frontend application built with Python and Flask.
+- **Database Service:** A PostgreSQL database to store application data.
+- **Cache Service:** Redis for caching frequently accessed data.
+
+Requires Docker (>= 20.10), Docker Compose (>= 1.27), and Git.
+
+**Setup:**
+
+1. Clone: `git clone https://github.com/<your_github_username>/<your_repository_name>.git && cd <your_repository_name>`
+2. Run: `docker compose up -d --build`
+3. Access: `http://localhost:5000`
+
+**Run Environments:**
+
+- **Dev:** `docker compose up -d --build` (uses `.env` or `.env.development`)
+- **Prod:** `docker compose --env-file .env.production up -d --build`
