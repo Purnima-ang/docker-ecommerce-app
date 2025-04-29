@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>E-commerce Storefront</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Online Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Welcome to our Store!</h1>
-    <ul>
-        {% for product in products %}
-        <li>{{ product }}</li>
-        {% endfor %}
-    </ul>
+    <header>
+        <h1>Welcome to Our Fantastic Store!</h1>
+    </header>
+    <main>
+        <h2>Our Products</h2>
+        <ul class="product-list">
+            {% for product in products %}
+            <li class="product-item">{{ product }}</li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Awesome Store</p>
+    </footer>
 </body>
 </html>
